@@ -1,0 +1,14 @@
+stages:
+  - terraform
+
+terraform:
+  stage: terraform
+  tags:
+    - Local-Runner
+  script:
+    - mkdir /home/gitlab-runner/terraform
+    - cp -rf * /home/gitlab-runner/terraform
+    - cd /home/gitlab-runner/terraform
+    - terraform init && terraform plan
+    - terraform apply --auto-approve
+    # - terraform destroy --auto-approve
