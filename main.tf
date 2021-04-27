@@ -79,7 +79,7 @@ resource "vsphere_virtual_machine" "rancher" {
 
 # Clone One Vm from a template
 
-resource "vsphere_virtual_machine" "kubernetes-master" {
+resource "vsphere_virtual_machine" "Nginx" {
     # name = "khoak8s-master"
     name = "Nginx"
     resource_pool_id = data.vsphere_compute_cluster.Cluster.resource_pool_id
@@ -126,7 +126,7 @@ resource "vsphere_virtual_machine" "kubernetes-master" {
 
 # Clone multiple Vms from a template
 
-resource "vsphere_virtual_machine" "kubernetes-workers" {
+resource "vsphere_virtual_machine" "Haproxy" {
     count = 1
     # name = "khoak8s-worker0${count.index + 1}"
     name = "Haproxy"
@@ -173,7 +173,7 @@ resource "vsphere_virtual_machine" "kubernetes-workers" {
     }
 }
 
-resource "vsphere_virtual_machine" "kubernetes-workers" {
+resource "vsphere_virtual_machine" "Web-Server" {
     count = 1
     # name = "khoak8s-worker0${count.index + 1}"
     name = "Web-server"
