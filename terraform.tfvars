@@ -16,7 +16,6 @@ deploy_vsphere_network = "PG-Mikrotik
 guest_template = "packer-ubuntu-18.04-khoa"
 guest_vcpu = "2"
 guest_memory = "4096"
-<<<<<<< HEAD
 guest_ipv4_netmask = "24"
 guest_ipv4_gateway = "10.1.1.254"
 guest_dns_servers = "10.1.1.200"
