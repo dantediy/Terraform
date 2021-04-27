@@ -7,7 +7,7 @@ variable "provider_vsphere_host" {
 
 variable "provider_vsphere_user" {
   description = "vSphere username to use to connect to the environment - Default: administrator@vsphere.local"
-  default     = "administrator@vsphere.local"
+  default     = "khoa@vsphere.local"
 }
 
 variable "provider_vsphere_password" {
