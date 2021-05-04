@@ -1,7 +1,7 @@
 # Provider
-provider_vsphere_host = "vcenter.lab.local"
-provider_vsphere_user = "administrator@vsphere.local"
-provider_vsphere_password = "P@ss@@2021"
+provider_vsphere_host = "IP or domain"
+provider_vsphere_user = "User ID"
+provider_vsphere_password = "User pass
 
 
 # Infrastructure
@@ -17,7 +17,7 @@ guest_template = "packer-ubuntu-18.04-khoa"
 guest_vcpu = "2"
 guest_memory = "4096"
 guest_ipv4_netmask = "24"
-guest_ipv4_gateway = "10.1.1.254"
-guest_dns_servers = "10.1.1.200"
+guest_ipv4_gateway = "IP Gateway"
+guest_dns_servers = "DNS"
 #guest_dns_suffix = "pod03.lab.local"
 guest_domain = "lab.local"
